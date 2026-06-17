@@ -1,0 +1,20 @@
+======================================
+STEP 4: Kraken2 classification (rerun)
+Input    : /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged/all_contigs.fa
+Contigs  : 33719
+Database : /work/HCC/BCRF/app_specific/kraken/2.17.1/k2_pluspf
+Threads  : 32
+======================================
+
+--- Classification Summary ---
+Total contigs     : 33719
+Classified        : 2883
+Unclassified      : 30836
+
+Top domain breakdown:
+  Eukaryota                      3.70%
+  Fungi                          0.01%
+  Bacteria                       2.71%
+======================================
+STEP 4 RERUN COMPLETE
+======================================

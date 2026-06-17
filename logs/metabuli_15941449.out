@@ -1,0 +1,38 @@
+Starting Metabuli taxonomic classification at Tue Jun 16 15:58:46 CDT 2026
+Input: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged/all_contigs.fa
+Output: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy
+usage: metabuli classify <i:query file(s)> <i:database directory> <o:output directory> <job ID>  [options]
+ By Jaebeom Kim <jbeom0731@gmail.com>
+options: prefilter:             
+ --mask INT              Mask sequences in prefilter stage with tantan: 0: w/o low complexity masking, 1: with low complexity masking [0]
+ --mask-prob FLOAT       Mask sequences is probablity is above threshold [0.900]
+misc:                  
+ --seq-mode INT          Single-end: 1, Paired-end: 2, Long read: 3 [2]
+ --precise INT           Use presets for precise mode. 1: short-read, 2: HiFi long-read. [0]
+ -e DOUBLE               Ignore matches with larger E-value (0 to disable) [1.000E+00]
+ --min-score FLOAT       Min. sequence similarity score (0.0-1.0) [0.000]
+ --min-sp-score FLOAT    Min. score for species- or lower-level classification. [0.000]
+ --min-aa INT            Min. number of amino acid matches for classification [11]
+ --min-aa-euk INT        Min. number of amino acid matches for eukaryotic classification [16]
+ --taxonomy-path STR     Directory where the taxonomy dump files are stored []
+ --max-ram INT           RAM usage in GiB [128]
+ --match-per-kmer INT    Num. of matches per query k-mer. Larger values assign more memory for storing k-mer matches.  [4]
+ --accession-level INT   Build or search a database for accession-level classification [0]
+ --tie-ratio FLOAT       Best * --tie-ratio is considered as a tie [0.990]
+ --lineage INT           Print lineage information [0]
+ --validate-input INT    Validate format of input FASTA/FASTQ file(s) [0]
+ --validate-db INT       Validate the database. It checks if all required files are present and if the k-mer count is consistent. [0]
+ --syncmer INT           Using syncmer [0]
+ --smer-len INT          s-mer length for syncmer selection [5]
+ --print-log INT         Print logs to debug [0]
+ --priority-taxid STR    Favors these and child taxa instead of LCA in case of a tie. (Comma-separated list of tax IDs.) []
+ --db-size INT           Total length of sequences in the database (nt) [0]
+ --max-shift INT         Max codon shift to link k-mers (Default: auto. Specify to override). [1]
+common:                
+ --threads INT           Number of CPU-cores used (all by default) [56]
+ --sub-mat TWIN          Substitution matrix file [aa:blosum62.out,nucl:nucleotide.out]
+
+references:
+Metabuli classification done at Tue Jun 16 15:58:46 CDT 2026
+Creating taxonomy profile...
+ERROR: metabuli_classified.tsv not found

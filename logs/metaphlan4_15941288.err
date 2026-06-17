@@ -1,0 +1,21 @@
+NOTE: MetaPhAn automatically uses the default latest central database located 
+at /work/HCC/BCRF/app_specific/metaphlan/4/vJun23_202403/.
+To use the older (Oct '21) database use the `--bowtie2db
+/work/HCC/BCRF/app_specific/metaphlan/4/vJan21_202103/` 
+with `metaphlan`. The older database was the default for MetaPhlAn 4.03.
+
+Lmod is automatically replacing "python/3.9" with "metaphlan/4.1".
+
+NOTE: MetaPhAn automatically uses the default latest central database located 
+at /work/HCC/BCRF/app_specific/metaphlan/4/vJun23_202403/.
+To use the older (Oct '21) database use the `--bowtie2db
+/work/HCC/BCRF/app_specific/metaphlan/4/vJan21_202103/` 
+with `metaphlan`. The older database was the default for MetaPhlAn 4.03.
+Traceback (most recent call last):
+  File "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs/metaphlan-4.1.1/bin/metaphlan", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/util/opt/anaconda/deployed-conda-envs/packages/metaphlan/envs/metaphlan-4.1.1/lib/python3.12/site-packages/metaphlan/metaphlan.py", line 1383, in main
+    elif stat.S_ISFIFO(os.stat(fname).st_mode):
+                       ^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged_contig_catalog/final_contigs.fasta'

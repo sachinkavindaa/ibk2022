@@ -1,0 +1,6 @@
+Starting Metabuli taxonomic classification at Tue Jun 16 15:43:43 CDT 2026
+Input: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged/all_contigs.fa
+Output: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy
+Metabuli classification done at Tue Jun 16 15:43:43 CDT 2026
+Creating taxonomy profile...
+ERROR: metabuli_classified.tsv not found

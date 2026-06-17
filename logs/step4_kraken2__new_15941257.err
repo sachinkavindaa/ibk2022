@@ -1,0 +1,14 @@
+-------------------------------| Help message for Kraken2 module
+|------------------------------------- 
+HCC has already downloaded a few Kraken2 databases.
+Their location can be accessed via the following environment variables:
+$KRAKEN2_STANDARD_DB, $KRAKEN2_VIRAL_DB, $KRAKEN2_CORE_NT_DB,
+$KRAKEN2_PLUSPF_DB, $KRAKEN2_PLUSPFP_DB 
+------------------------------------------------------------------------------------------------------- 
+For example, to run Kraken2 with the Viral database, please use:
+'kraken2 --db $KRAKEN2_VIRAL_DB <other options> <my_sequence_file.fa>'
+------------------------------------------------------------------------------------------------------- 
+Loading database information... done.
+33719 sequences (25.71 Mbp) processed in 0.753s (2687.4 Kseq/m, 2049.12 Mbp/m).
+  2883 sequences classified (8.55%)
+  30836 sequences unclassified (91.45%)
