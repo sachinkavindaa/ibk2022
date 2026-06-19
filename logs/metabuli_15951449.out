@@ -1,0 +1,70 @@
+Starting Metabuli at Wed Jun 17 13:23:50 CDT 2026
+Contigs: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged/all_contigs.fa
+Database: /work/samodha/sachin/databases/metabuli/refseq_standard
+Output: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy
+classify /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/06_Merged/all_contigs.fa /work/samodha/sachin/databases/metabuli/refseq_standard /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy all_contigs --threads 16 --seq-mode 1 --min-score 0.5 --lineage 1 
+
+Metabuli Version (commit):                                                                     	1.2.0
+Threads                                                                                        	16
+Sequencing type                                                                                	1
+Use presets for precise mode. 1: short-read, 2: HiFi long-read.                                	0
+Ignore matches with larger E-value (0 to disable)                                              	1
+Min. sequence similarity score                                                                 	0.5
+Min. score for species- or lower-level classification.                                         	0
+Min. num. of amino acid matches                                                                	11
+Min. num. of amino acid matches for eukaryotes                                                 	16
+Directory where the taxonomy dump files are stored                                             	
+Mask residues                                                                                  	0
+Mask residues probability                                                                      	0.9
+RAM usage in GiB                                                                               	128
+Number of matches per query k-mer.                                                             	4
+Accession-level DB build/search                                                                	0
+Best * --tie-ratio is considered as a tie                                                      	0.99
+Print lineage information                                                                      	1
+Validate format of input FASTA/FASTQ file(s)                                                   	0
+Validate the database                                                                          	0
+Using syncmer                                                                                  	0
+s-mer length for syncmer selection                                                             	5
+Substitution matrix                                                                            	aa:blosum62.out,nucl:nucleotide.out
+Print logs to debug                                                                            	0
+Favors these and child taxa instead of LCA in case of a tie. (Comma-separated list of tax IDs.)	
+Total length of sequences in the database (nt)                                                 	0
+Max codon shift to link k-mers (Default: auto. Specify to override).                           	1
+
+Syncmer is enabled because the DB was created with syncmer.
+s-mer length is set to 6 according to the DB.
+Database name : 1855057335
+Creation date : 2026-4-3
+Using SpacedPattern with custom metamer.
+Loading single-code metamer pattern from file: /work/samodha/sachin/databases/metabuli/refseq_standard/db.parameters
+K-mer length: 9
+Loading custom genetic code: "Reduced Alphabet (15+stop)"
+Total DNA bits: 27, Total AA bits: 36
+--------------------
+Query k-mer extraction : 1 s
+Query k-mer sorting    : 0 s
+Query k-mer number     : 25273048
+Reference k-mer search : 32 s
+K-mer match count      : 33452882
+K-mer match sorting    : 0 s
+K-mer match analysis   : 0 s
+Writing results        : 0 s
+Processed read count   : 33719
+--------------------
+--------------------
+Total k-mer match count: 33452882
+Taxonomic classification completed.
+Time for processing: 0h 0m 37s 521ms
+Metabuli finished at Wed Jun 17 13:24:28 CDT 2026
+Creating domain summaries...
+
+====== Metabuli Classification Summary ======
+Total lines: 33720
+Bacteria: 897
+Archaea: 0
+Viruses: 0
+Eukaryota: 625
+=============================================
+
+Classification file: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy/all_contigs_classifications.tsv
+Report file: /work/samodha/sachin/ShotgunM/Final_Analysis/data/combined_data/day1_25healthy_25infected/Output/07_Metabuli_taxonomy/all_contigs_report.tsv
